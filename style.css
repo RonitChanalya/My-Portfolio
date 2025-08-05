@@ -7,6 +7,7 @@
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F1F0E4;
+    cursor: none;
 }
 
 a {
@@ -14,6 +15,7 @@ a {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    cursor: none;
 }
 
 a {
@@ -22,7 +24,7 @@ a {
     font-size: 18px;
     transform: translateX(10px);
     transition: transform 0.3s ease;
-    cursor: default;
+    cursor: none;
 }
 
 .icon {
@@ -42,14 +44,6 @@ a:hover {
     transform: translateX(20px); 
 }
 
-.project {
-    cursor: pointer;
-}
-
-.resume {
-    cursor: pointer;
-}
-
 #main {
     height: 100vh;
     width: 100%;
@@ -59,7 +53,6 @@ a:hover {
 }
 
 #hero {
-    /* background-color: cadetblue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +71,6 @@ a:hover {
 }
 
 #navigation {
-    /* background-color: white; */
     height: 90%;
     width: 94%;
     padding-top: 25px;
@@ -120,12 +112,20 @@ a:hover {
 
 .socialLink {
     font-size: 5vh;
+    color: #3e3f29;
 }
 
 .codeLink {
-    cursor: pointer;
+    color: #3e3f29;
 }
 
-.socialIcon {
-    cursor: pointer;
+.circle {
+  position: fixed;
+  border-radius: 50%;
+  background-color: #3e3f29;
+  pointer-events: none;
+  z-index: 9999; /* stays above everything */
+  transition: width 0.1s linear, height 0.1s linear;
+  width: 18px;  
+  height: 18px;
 }

@@ -6,8 +6,9 @@
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #F1F0E4;
+    background-color: #f1f0e4;
     text-decoration: none;
+    cursor: none;
 }
 
 h1 {
@@ -78,6 +79,10 @@ a {
     transition: transform 0.3s ease;
 }
  
+a, button, .icon, a:hover, button:hover {
+  cursor: none !important;
+}
+
 a:hover {
     transform: scale(1.2); 
 }
@@ -88,4 +93,21 @@ a:hover {
 
 #logo img {
     height: 16vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.circle {
+  position: fixed;
+  border-radius: 50%;
+  background-color: #3e3f29;
+  pointer-events: none;
+  z-index: 9999; /* stays above everything */
+  transition: width 0.1s linear, height 0.1s linear;
+  width: 18px;  
+  height: 18px;
 }
