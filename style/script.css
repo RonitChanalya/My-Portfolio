@@ -82,7 +82,7 @@ a:hover {
     height: 90%;
     width: 94%;
     padding-top: 25px;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 #logo {
@@ -119,13 +119,13 @@ a:hover {
 }
 
 .socialLink {
-    font-size: 40px;
-}
-
-.socialIcon {
-    cursor: pointer;
+    font-size: 5vh;
 }
 
 .codeLink {
+    cursor: pointer;
+}
+
+.socialIcon {
     cursor: pointer;
 }

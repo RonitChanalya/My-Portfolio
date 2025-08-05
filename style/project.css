@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F1F0E4;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.span {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#projects {
+    width: 60%;
+    padding-top: 5vh;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+#box {
+    background-color: #BCA88D;
+    box-shadow: 2px 2px 4px #a19079;
+    border-radius: 10px;
+    height: 30vh;
+    width: 95%;
+    margin-top: 2vh;
+    padding-top: 1.5vh;
+    padding-left: 4vh;
+}
+
+h1 {
+    font-size: 4vh;
+    color: #3E3F29;
+}
+
+p {
+    margin-top: 1vh;
+    font-size: 2.5vh;
+    color: #3e3e3e;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3E3F29;
+    margin-top: 2vh;
+    transition: transform 0.3s ease;
+}
+ 
+a:hover {
+    transform: scale(1.2); 
+}
+
+.icon {
+    font-size: 4.5vh;
+}
+
+#logo img {
+    height: 16vh;
+}
